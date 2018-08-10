@@ -1,0 +1,52 @@
+import java.util.ArrayList;
+
+public class functions {
+	
+	
+	
+	ArrayList<Integer[]> cntArray = new  ArrayList<>();
+	
+	public Boolean fourOfAKind() {
+		if(checkForNum(4)) return true;
+		return false;
+	}
+	
+	public Boolean fullHouse() {
+		if( checkForNum(3) && checkForNum(2))return true;
+		return false;
+	}
+	
+	
+	public Boolean ThreeOfAKind() {
+		if(checkForNum(3)) return true;
+		return false;
+	}
+	
+	
+	public Boolean twoPair() {
+		if(cntArray.get(0)[1] ==2 &&  cntArray.get(1)[1] == 2) return true;
+		return false;
+		
+	}
+	
+	public Boolean onePair() {
+		if(checkForNum(2)) return true;
+		return false;
+	}
+	
+	
+	public Boolean checkForNum(int num){
+		for(int i=0; i < cntArray.size(); i++) {
+			if(cntArray.get(i)[0] == num) return true;
+		}
+		return false;
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
