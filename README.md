@@ -1,1 +1,1 @@
-# Poker PayPal
+# Poker
