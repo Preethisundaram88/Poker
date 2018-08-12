@@ -1,0 +1,42 @@
+package Pockerr;
+
+import java.util.ArrayList;
+
+
+
+public class functions2 {
+
+
+    ArrayList<Integer[]> cntArray = new ArrayList<>();
+
+    public Boolean straight() {
+
+        // Straight - 9♥, 8♣, 7♠, 6♦, 5♥
+
+        int ctr = 0;
+
+
+        for (i = 1; i < cntArray.size() - 1; i++) {
+            if (cntArray.get(i) - cntArray.get(i - 1) == 1)
+                ctr++;
+
+        }
+
+        if (ctr == 5)
+            return true;
+
+        return false;
+    }
+
+
+    public Boolean Flush() {
+        for (int i = 1; i < ctrArray.size(); i++) {
+            if (cntArray.get(i)[4] == 1)
+                return true;
+
+        }
+
+        return false;
+    }
+
+}
